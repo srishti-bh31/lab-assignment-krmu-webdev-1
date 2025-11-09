@@ -1,0 +1,146 @@
+/*
+   General Styles
+ */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 5;
+  background-color: #ffffff;
+  color: #5e1475f5;
+  scroll-behavior:smooth;
+}
+
+h1, h2, h3 {
+  color: #f98a03;
+}
+
+/* 
+   Header
+*/
+header {
+  background-color: #eef07c;
+  color: white;
+  text-align:left;
+  padding: 50px 20px;
+}
+
+/*
+   Navigation
+*/
+nav {
+  background-color: #ea4db3;
+  position:initial;
+  top: 0;
+  z-index:100;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 10px 20px;
+}
+
+nav a {
+  color: rgb(66, 23, 85);
+  text-decoration:none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+/*
+   main
+*/
+main {
+  padding: 40px 80px;
+  text-align:left;
+}
+
+.profile-img {
+  width: 200px;
+  height: 250px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+/* 
+   Table
+*/
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgb(255, 255, 255);
+}
+
+th, td {
+  border: 1px solid #6d6868;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #ea4db3;
+  color: rgb(59, 16, 82);
+}
+
+tr:nth-child(even) {
+  background-color: #f1d0d0;
+}
+
+/* 
+   Buttons
+*/
+button {
+  background-color: #310e46;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border:#f4b41a;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #f4b41a;
+  color: #2a0f35;
+}
+
+/*
+   Form
+*/
+form {
+  width: 60%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ba5454;
+  border-radius: 5px;
+}
+
+/* 
+   Misc
+*/
+hr {
+  border: 1px solid #4f0c0c;
+  width: 80%;
+  margin: 40px auto;
+}
