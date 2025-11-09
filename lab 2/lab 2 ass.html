@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="top">
+        <h1>Srishti Bhardwaj</h1>
+        <nav>
+            <ul>
+                <li><a href="#skip to main content">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cnt">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="skip to main content">
+        <h2>welcome to my portfolio</h2>
+        <p>
+            Hello! I'm web development student. This is my personal portfolio website.
+        </p>
+        <h2 id="skip to main content">About me</h2>
+        <img src="srish img.jpeg" alt="a passport size photograph of a person" class="profile-img" width="200" height="250">
+        <p>My name is srishti bhardwaj, and I'm currently a 1st sem student studying b.tech at K.R MANGALAM UNIVERSITY.
+            I've always had a strong interest in technology. I'm particularly passionate about AI and its uses, and I'm excited to be here to learn, grow, and
+            collaborate with others who share similar interests.
+        </p>
+    </main>
+
+    <hr>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <table border="1px" cellpadding="5px" cellspacing="5px">
+             <thead>
+                <tr>
+                    <th>skill</th>
+                    <th>level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>html</td>
+                    <td>beginner</td>
+                </tr>
+                <tr>
+                    <td>css</td>
+                    <td>beginner</td>
+                </tr>
+                <tr>
+                    <td>java script</td>
+                    <td>learning</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+         <ul>
+            <li>User Form:a form page where user can give their informations like name, email, mobile etc.</li>
+            <li>Tables: an organised table of scores of students</li>
+            <li>introduction website:an introduction website where my interests and hobbies were shown </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="cnt">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
