@@ -1,0 +1,229 @@
+/* ========== Global Styles ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary: #3b82f6;
+    --dark: #1f2937;
+    --light: #ffffff;
+    --gray: #e5e7eb;
+}
+
+body {
+    background: #ef7f7f;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ========== Header ========== */
+header {
+    background: var(--light);
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+nav a:hover {
+    color: var(--primary);
+}
+
+/* ========== Hero ========== */
+.hero {
+    background: url('https://source.unsplash.com/1600x800/?shopping,store') center/cover no-repeat;
+    padding: 120px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: var(--primary);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* ========== Layout ========== */
+.main-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sidebar label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.sidebar select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Products */
+.products {
+    width: 75%;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ========== Contact Form ========== */
+.contact-section {
+    background: var(--gray);
+    padding: 50px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-form {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    margin-top: 15px;
+}
+
+/* ========== Footer ========== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark);
+    color: white;
+    margin-top: 40px;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+    .sidebar, .products {
+        width: 100%;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-form {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+    nav a {
+        margin: 0 6px;
+    }
+}
